@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>lidarscan_msg_yolo_demo</name>
+  <name>lidarframe_msg_yolo_demo</name>
   <version>0.1.0</version>
   <description>
-    Python node that subscribes to lidar_msgs/LidarInfo and LidarScan,
+    Python node that subscribes to lidar_msgs/LidarInfo and LidarFrame,
     decodes RANGE, NEAR_IR, and REFLECTIVITY channels into BGR images, runs
     Ultralytics YOLO, and publishes annotated sensor_msgs/Image topics for RViz2.
   </description>

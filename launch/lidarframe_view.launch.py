@@ -13,8 +13,8 @@ from launch_ros.parameter_descriptions import ParameterValue
 
 
 def generate_launch_description() -> LaunchDescription:
-    pkg_share = get_package_share_directory('lidarscan_msg_yolo_demo')
-    rviz_cfg = os.path.join(pkg_share, 'config', 'lidarscan_view.rviz')
+    pkg_share = get_package_share_directory('lidarframe_msg_yolo_demo')
+    rviz_cfg = os.path.join(pkg_share, 'config', 'lidarframe_view.rviz')
 
     return LaunchDescription(
         [
@@ -39,9 +39,9 @@ def generate_launch_description() -> LaunchDescription:
                 description='If true, start RViz2 with yolo_lidar_view.rviz',
             ),
             Node(
-                package='lidarscan_msg_yolo_demo',
-                executable='lidarscan_yolo_consumer',
-                name='lidarscan_yolo_consumer',
+                package='lidarframe_msg_yolo_demo',
+                executable='lidarframe_yolo_consumer',
+                name='lidarframe_yolo_consumer',
                 output='screen',
                 parameters=[
                     {'model_name': LaunchConfiguration('model_name')},

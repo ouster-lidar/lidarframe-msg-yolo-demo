@@ -3,7 +3,7 @@ from glob import glob
 
 from setuptools import find_packages, setup
 
-package_name = 'lidarscan_msg_yolo_demo'
+package_name = 'lidarframe_msg_yolo_demo'
 
 setup(
     name=package_name,
@@ -26,12 +26,12 @@ setup(
     zip_safe=True,
     maintainer='ouster developers',
     maintainer_email='oss@ouster.io',
-    description='YOLO inference on LidarScan RANGE / NEAR_IR / REFLECTIVITY channels',
+    description='YOLO inference on LidarFrame RANGE / NEAR_IR / REFLECTIVITY channels',
     license='BSD-3-Clause',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'lidarscan_yolo_consumer = lidarscan_msg_yolo_demo.lidarscan_yolo_consumer:main',
+            'lidarframe_yolo_consumer = lidarframe_msg_yolo_demo.lidarframe_yolo_consumer:main',
         ],
     },
 )
